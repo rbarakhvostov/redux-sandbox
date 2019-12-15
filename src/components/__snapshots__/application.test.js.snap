@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Application renders without crashing 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    <Connect(Counter)>
+      <Counter
+        counter={0}
+        dec={[Function]}
+        inc={[Function]}
+        rnd={[Function]}
+      >
+        <div
+          className="jumbotron"
+        >
+          <h2>
+            0
+          </h2>
+          <button
+            className="btn btn-primary btn-lg"
+            onClick={[Function]}
+          >
+            DEC
+          </button>
+          <button
+            className="btn btn-primary btn-lg"
+            onClick={[Function]}
+          >
+            INC
+          </button>
+          <button
+            className="btn btn-primary btn-lg"
+            onClick={[Function]}
+          >
+            RND
+          </button>
+        </div>
+      </Counter>
+    </Connect(Counter)>
+  </App>
+</Provider>
+`;

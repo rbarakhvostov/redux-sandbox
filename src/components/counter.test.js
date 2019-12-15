@@ -1,8 +1,7 @@
 import React from 'react';
-import { Counter }from './counter';
+import { Counter } from './counter';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-
 
 describe('<Counter />', () => {
   it ('renders without crashing', () => {
