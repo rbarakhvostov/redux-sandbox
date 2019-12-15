@@ -5,7 +5,7 @@ import * as actions from '../actions';
 const Counter = ({ counter, inc, dec, rnd }) => {
   return (
     <div className="jumbotron">
-      <h2>{ counter }</h2>
+      <h3>{ counter }</h3>
       <button
         className="btn btn-primary btn-lg"
         onClick={dec}>
