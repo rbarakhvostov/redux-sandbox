@@ -31,4 +31,5 @@ const mapStateToProps = (state) => {
   }
 }
 
+export { Counter };
 export default connect(mapStateToProps, actions)(Counter);
