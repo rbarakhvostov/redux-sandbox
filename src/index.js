@@ -8,6 +8,8 @@ import reducer from './reducer';
 const store = createStore(reducer);
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <div className='container'>
+      <App />
+    </div>
   </Provider>,
   document.getElementById('root'));
