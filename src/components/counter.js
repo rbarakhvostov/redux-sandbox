@@ -7,7 +7,7 @@ const Counter = ({ counter, inc, dec, rnd }) => {
     <div className="jumbotron">
       <h2>{ counter }</h2>
       <button
-        className="btn btn-primary btn-lg"
+        className="btn btn-primary btn-lg dec"
         onClick={dec}>
         DEC
       </button>

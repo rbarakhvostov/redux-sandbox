@@ -17,4 +17,15 @@ describe('Application', () => {
 
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
+  it ('h2 renders without crashing', () => {
+    const store = createStore(reducer);
+    const wrapper = mount(
+      <Provider store={store} >
+        <App />
+      </Provider>
+    );
+
+    expect(wrapper.find('h2').text()).toEqual('0');
+  });
 });
