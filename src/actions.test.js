@@ -1,5 +1,5 @@
-import { inc, dec, rnd} from './actions';
 import { mockRandom, resetMockRandom } from 'jest-mock-random';
+import { inc, dec, rnd} from './actions';
 
 describe('Actions', () => {
   it ('INC works right', () => {
@@ -14,6 +14,7 @@ describe('Actions', () => {
 
   it ('RND works right', () => {
     mockRandom(0.12);
+
     expect(rnd()).toEqual({
       type: 'RND',
       payload: Math.floor(Math.random() * 10),
