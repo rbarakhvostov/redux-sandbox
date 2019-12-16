@@ -10,7 +10,7 @@ describe('Application', () => {
   it ('renders without crashing', () => {
     const store = createStore(reducer);
     const wrapper = mount(
-      <Provider store={store} >
+      <Provider store={store}>
         <App />
       </Provider>
     );
@@ -21,7 +21,7 @@ describe('Application', () => {
   it ('h2 renders without crashing', () => {
     const store = createStore(reducer);
     const wrapper = mount(
-      <Provider store={store} >
+      <Provider store={store}>
         <App />
       </Provider>
     );

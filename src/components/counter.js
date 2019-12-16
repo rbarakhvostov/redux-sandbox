@@ -9,16 +9,19 @@ const Counter = ({ counter, inc, dec, rnd }) => {
     <div className="jumbotron">
       <h2>{ counter }</h2>
       <button
-        className="btn btn-primary btn-lg dec"
+        id='dec'
+        className="btn btn-primary btn-lg"
         onClick={dec}>
         DEC
       </button>
       <button
+        id='inc'
         className="btn btn-primary btn-lg"
         onClick={inc}>
         INC
       </button>
       <button
+        id='rnd'
         className="btn btn-primary btn-lg"
         onClick={rnd}>
         RND
