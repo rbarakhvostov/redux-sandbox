@@ -6,17 +6,20 @@ exports[`<Counter /> renders without crashing 1`] = `
 >
   <h2 />
   <button
-    className="btn btn-primary btn-lg dec"
+    className="btn btn-primary btn-lg"
+    id="dec"
   >
     DEC
   </button>
   <button
     className="btn btn-primary btn-lg"
+    id="inc"
   >
     INC
   </button>
   <button
     className="btn btn-primary btn-lg"
+    id="rnd"
   >
     RND
   </button>

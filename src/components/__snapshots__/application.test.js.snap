@@ -27,19 +27,22 @@ exports[`Application renders without crashing 1`] = `
             0
           </h2>
           <button
-            className="btn btn-primary btn-lg dec"
+            className="btn btn-primary btn-lg"
+            id="dec"
             onClick={[Function]}
           >
             DEC
           </button>
           <button
             className="btn btn-primary btn-lg"
+            id="inc"
             onClick={[Function]}
           >
             INC
           </button>
           <button
             className="btn btn-primary btn-lg"
+            id="rnd"
             onClick={[Function]}
           >
             RND
