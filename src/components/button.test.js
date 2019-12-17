@@ -7,6 +7,7 @@ import reducer from '../reducer';
 import { mockRandom, resetMockRandom } from 'jest-mock-random';
 
 describe('BUTTON', () => {
+
   it ('test DEC button functionality', () => {
     const store = createStore(reducer);
     const wrapper = mount(
@@ -42,13 +43,14 @@ describe('BUTTON', () => {
       </Provider>
     );
 
-    mockRandom(0.36);
+    mockRandom([0.66, 0.42, 0.56]);
+
 
     wrapper.find('#rnd').simulate('click');
     wrapper.find('#rnd').simulate('click');
     wrapper.find('#rnd').simulate('click');
 
-    expect(wrapper.find('h2').text()).toEqual('9');
+    expect(wrapper.find('h2').text()).toEqual('15');
 
     resetMockRandom();
   });
