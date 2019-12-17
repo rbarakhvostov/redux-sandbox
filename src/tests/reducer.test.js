@@ -1,6 +1,6 @@
 import { mockRandom, resetMockRandom } from 'jest-mock-random';
-import reducer from './reducer';
-import { inc, dec, rnd} from './actions';
+import reducer from '../reducer';
+import { inc, dec, rnd} from '../actions';
 
 describe('Reducer', () => {
   it ('Reducer works correctly with inc()', () => {

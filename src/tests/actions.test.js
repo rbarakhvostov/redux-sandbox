@@ -1,5 +1,5 @@
 import { mockRandom, resetMockRandom } from 'jest-mock-random';
-import { inc, dec, rnd} from './actions';
+import { inc, dec, rnd} from '../actions';
 
 describe('Actions', () => {
   it ('INC works right', () => {

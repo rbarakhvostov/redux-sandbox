@@ -1,11 +1,11 @@
 import React from 'react';
-import { Counter } from './counter';
+import App from '../components/app';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-describe('<Counter />', () => {
+describe('<App />', () => {
   it ('renders without crashing', () => {
-    const wrapper = shallow(<Counter />);
+    const wrapper = shallow(<App />);
 
     expect(toJson(wrapper)).toMatchSnapshot();
   });
